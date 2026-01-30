@@ -1,0 +1,35 @@
+{
+  "defaults": {
+    "output_dir": "outputs",
+    "pdf_renderer": "fpdf"
+  },
+  "registries": {
+    "sources": {
+      "azure": "src.adapters.out.sources.azure_devops_adapter.AzureDevOpsAdapter"
+    },
+    "ai": {
+      "gemini": "src.adapters.out.ai.gemini_adapter.GeminiAdapter"
+    },
+    "reports": {
+      "qa": "src.application.prompting.prompt_builder.FilePromptBuilder",
+      "risks": "src.application.prompting.prompt_builder.FilePromptBuilder",
+      "test_strategy": "src.application.prompting.prompt_builder.FilePromptBuilder"
+    },
+    "renderers": {
+      "fpdf": "src.adapters.out.pdf.fpdf_adapter.FpdfRendererAdapter"
+    }
+  },
+  "adapters": {
+    "azure": {
+      "organization": "",
+      "project": ""
+    },
+    "gemini": {
+      "model": "gemini-2.5-flash"
+    },
+    "fpdf": {}
+  },
+  "prompts": {
+    "dir": "prompts"
+  }
+}

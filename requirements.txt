@@ -1,0 +1,5 @@
+requests
+fpdf2
+google-genai
+pytest
+python-dotenv
