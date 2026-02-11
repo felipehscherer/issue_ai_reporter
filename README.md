@@ -58,6 +58,7 @@ pip install -r requirements.txt
 
 2) Definir variaveis de ambiente:
 - `AZURE_DEVOPS_ORG`
+- (Opcional) `AZURE_DEVOPS_ORG_URL` (URL completa da org, ex: `https://dev.azure.com/<org>` ou `https://<org>.visualstudio.com`)
 - `AZURE_DEVOPS_PROJECT`
 - `AZURE_DEVOPS_PAT`
 - `GEMINI_API_KEY`
